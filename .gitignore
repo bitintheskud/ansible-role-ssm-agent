@@ -1,0 +1,16 @@
+graph.png
+log.log
+*.tfplan
+dump.rdb
+errored.tfstate
+log
+.idea
+.idea/*
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.*.backup
+.terraform
+.python-version
+crash.log
+plan.out
+.DS_Store
