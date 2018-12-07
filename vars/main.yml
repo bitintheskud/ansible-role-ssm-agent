@@ -1,0 +1,6 @@
+---
+# vars file for ansible-role-ssm-agent
+ssm_agent_dnl_dir: "/tmp"
+ssm_agent_pkg_name: "amazon-ssm-agent.rpm"
+ssm_agent_pkg_url: "https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest"
+ssm_agent_svc_state: 'started'

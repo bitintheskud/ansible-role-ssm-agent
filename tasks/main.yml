@@ -1,0 +1,10 @@
+---
+- name: Include for x86_64 
+  include: x86_64.yml
+  when: ansible_architecture == 'x86_64'
+
+- name: Include for centos 7
+  include: install_centos_7.yml
+  when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '7'
+
+# Please add other arch if you need (arm/i386)

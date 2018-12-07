@@ -1,0 +1,8 @@
+---
+- name: Download the SSM package
+  get_url:
+    dest: "{{ ssm_agent_dnl_dir }}"
+    group: root
+    owner: root
+    mode: 0660
+    url: "{{ ssm_agent_pkg_url }}/linux_amd/{{ ssm_agent_pkg_name }}"
