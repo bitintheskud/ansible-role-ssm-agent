@@ -1,11 +1,10 @@
+.idea/
 graph.png
 log.log
 *.tfplan
 dump.rdb
 errored.tfstate
 log
-.idea
-.idea/workspace.xml
 terraform.tfstate
 terraform.tfstate.backup
 terraform.tfstate.*.backup
