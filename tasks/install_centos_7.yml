@@ -7,7 +7,7 @@
 
 - name: Refresh systemctl
   shell: 'systemctl daemon-reload'
-  when: pkg_installed
+  when: pkg_installed.changed == true
 
 - name: Enable SSM agent
   service:
