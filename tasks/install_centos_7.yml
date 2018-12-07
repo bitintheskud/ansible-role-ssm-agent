@@ -6,7 +6,7 @@
   register: pkg_installed
 
 - name: Refresh systemctl
-  shell: "systemctl daemong-reload"
+  shell: 'systemctl daemon-reload'
   when: pkg_installed
 
 - name: Enable SSM agent
