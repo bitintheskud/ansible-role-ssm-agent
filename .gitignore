@@ -5,7 +5,7 @@ dump.rdb
 errored.tfstate
 log
 .idea
-.idea/*
+.idea/*.xml
 terraform.tfstate
 terraform.tfstate.backup
 terraform.tfstate.*.backup

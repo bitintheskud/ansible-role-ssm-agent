@@ -5,4 +5,4 @@
     group: root
     owner: root
     mode: 0660
-    url: "{{ ssm_agent_pkg_url }}/linux_amd/{{ ssm_agent_pkg_name }}"
+    url: "{{ ssm_agent_pkg_url }}/linux_amd64/{{ ssm_agent_pkg_name }}"
