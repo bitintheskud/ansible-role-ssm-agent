@@ -3,14 +3,4 @@
   yum:
     name: "{{ ssm_agent_dnl_dir }}/{{ ssm_agent_pkg_name }}"
     state: installed
-  register: pkg_installed
-
-- name: Refresh systemctl
-  shell: 'systemctl daemon-reload'
-  when: pkg_installed.changed == true
-
-- name: Enable SSM agent
-  service:
-    name: amazon-ssm-agent
-    state: "{{ ssm_agent_svc_state }}"
-    enabled: yes
+  notify: systemctl_handler
