@@ -2,7 +2,7 @@
 - name: Install SSM rpm package
   yum:
     name: "{{ ssm_agent_dnl_dir }}/{{ ssm_agent_pkg_name }}"
-    state: latest 
+    state: latest
   register: pkg_installed
 
 - name: Refresh systemctl
