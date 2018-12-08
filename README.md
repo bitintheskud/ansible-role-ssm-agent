@@ -3,22 +3,25 @@ Ansible Role for AWS SSM installation
 
 [![Build Status](https://travis-ci.org/bitintheskud/ansible-role-ssm-agent.svg?branch=master)](https://travis-ci.org/bitintheskud/ansible-role-ssm-agent)
 
-
-This role install and configure AWS SSM agent on linux Centos 7. 
-
-You can contribute by adding more linux distro, release and architecture. 
-
+A very simple role to install and configure AWS SSM agent on linux (Centos 7 only  for now). 
 
 Description
 ------------
 
 This role install and configure AWS SSM agent on linux Centos 7. 
-Feel free to contribute by adding more linux distro, release and architecture ansible code. 
+
+Contribution
+------------
+
+Please contribute by adding more linux distro, release and architecture ansible code.
+
+Also, the travis build use [ansible-lint](https://github.com/ansible/ansible-lint) to enforce best practice. 
+
 
 Requirements
 ------------
 
-- CentOS 7 / Redhat 7
+- Ansible 2.5 or higher
 
 
 Role Variables
@@ -35,7 +38,7 @@ Role Variables
 Dependencies
 ------------
 
-- Ansible > 2.1
+- None
 
 
 Example Playbook
@@ -58,5 +61,5 @@ BSD
 Author Information
 ------------------
 
-@bitintheskud
+@bitintheskud 
 
