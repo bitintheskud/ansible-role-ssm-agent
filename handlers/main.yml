@@ -1,2 +1,8 @@
 ---
 # handlers file for ansible-role-ssm-agent
+- name: systemctl_handler
+  systemd:
+    name: amazon-ssm-agent
+    daemon_reload: yes
+    state: "{{ ssm_agent_svc_state }}"
+    enabled: yes
